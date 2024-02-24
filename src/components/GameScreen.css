@@ -1,0 +1,35 @@
+.game-wrapper {
+  height: 80%;
+  width: 70%;
+  background-image: url('../assets/screen-bg.jpg');
+  border-radius: 2em;
+  position: relative;
+
+  & .ball {
+    height: 4dvw;
+    width: 4dvw;
+    background-color: orange;
+    border: 0.3rem solid pink;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgb(49, 49, 48);
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  & .target {
+    transition: top 0.5s, left 0.5s, height 0.5s, width 0.5s,
+      background-color 0.5s, transform 0.5s;
+  }
+
+  & .target:hover {
+    background-color: rgb(153, 108, 25);
+  }
+
+  & .target.delete {
+    height: 0;
+    width: 0;
+    background-color: white;
+  }
+}

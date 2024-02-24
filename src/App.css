@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Micro 5', sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+#root {
+  height: 100dvh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
